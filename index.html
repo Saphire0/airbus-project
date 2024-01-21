@@ -4,38 +4,40 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link href="styles.css" rel="stylesheet">
+		<link rel="icon" href="media/logo.jpeg">
 	</head>
 	<body>
 		<div class="header" id="header"> 
 			<ul>
 				<li><a href="index.html"><img id="logo" src="media/logo.jpeg"></li>
-				<li><a href="Media-center.html">News</a></li>
+				<li><a href="Aircrafts.html">Aircrafts</a></li>
 				<li><a href="Media-center.html">Media center</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>			
-		<video autoplay muted loop id="myVideo">
-			<source src="./media/video1.mp4" type="video/mp4">
-			Tu navegador no admite video HTML5.
+		<video autoplay muted loop id="myVideo"> <!--Esto es el video que se va a reproducir automaticamente, sin sonido y en bucle-->
+			<source src="./media/video1.mp4" type="video/mp4">  
+			
 		  </video>
 		  
-		  <div class="content">
-			<button id="myBtn" onclick="myFunction()">Pause</button>
+		  <div class="content"> <!--Esto es el boton-->
+			<button id="myBtn" onclick="myFunction()">Pause</button> <!--Al hacer click va a pasar lo que esta programado en la funcion hecha entre <script></script>-->
 		  </div>
 		  
 		  <script>
-		  var video = document.getElementById("myVideo");
-		  var btn = document.getElementById("myBtn");
+		  var video = document.getElementById("myVideo"); //variable para el video//
+		  var btn = document.getElementById("myBtn"); //variable para el boton//
 		  
-		  function myFunction() {
-			if (video.paused) {
-			  video.play();
-			  btn.innerHTML = "Pause";
-			} else {
-			  video.pause();
-			  btn.innerHTML = "Play";
+		  function myFunction() { //la funcion llamada mi funcion//
+			if (video.paused) { //si el video esta pausado 
+			  video.play(); //al hacer click reproducelo//
+			  btn.innerHTML = "Pause"; //cambia el texto a pause//
+			} else { //cualquier otra cosa//
+			  video.pause(); //pausa el video//
+			  btn.innerHTML = "Play"; //cambia el texto a play//
 			}
 		  }
+		  
 		  </script>
 		<h2>Hightlights</h2>
 		<hr>
@@ -58,7 +60,7 @@
 		<div class="action">
 			<figure>
 				<img src="media/imagen4.jpg" alt="Imagen 4">
-				<figcaption>ASCENDing to new heights with cryogenic superconductivity.</figcaption>
+				<figcaption id="ascending-to-new">ASCENDing to new heights with cryogenic superconductivity.</figcaption>
 			</figure>
 			  	<div class="parrafo">
 				<p>
@@ -84,7 +86,7 @@
 		<h2>Featured News</h2>
 		<hr>
 		<div class="new">
-			<figure>
+			<figure class="one-third-figure-new">
 			  <img src="media/imagen5.jpg" alt="Imagen 5">
 			  <figcaption class="parrafo2">
 				<q>We are proud that the Bundeswehr has decided to order up to 82 H145M helicopters</q>, said Bruno Even, CEO of Airbus Helicopters. 
@@ -93,7 +95,7 @@
 				</q>
 			</figcaption>
 			</figure>
-			<figure>
+			<figure class="one-third-figure-new">
 			  <img src="media/imagen6.jpg" alt="Imagen 6">
 			  <figcaption class="parrafo2">
 				It is 1:20 pm on a Tuesday at  Ämari Air Base in western Estonia, just 250 km from the Russian border. 
@@ -101,7 +103,7 @@
 				At that precise moment, an alarm echoes through the base. It is an <u>Alpha Scramble</u>. A real alert. The real deal! From that moment, training and theory turns into real life operations. 
 				</figcaption>
 			</figure>
-			<figure>
+			<figure class="one-third-figure-new">
 			  <img src="media/imagen7.jpg" alt="Imagen 7">
 			  <figcaption class="parrafo2">
 				Multiple posts showing queues of people outside one of Ukraine's main banks, which had allegedly banned withdrawals, combined with the hacking of the same bank's website. <i>Fake news</i>.
@@ -117,12 +119,12 @@
 				<h3 id="touch" class="footer-title">Let's stay in touch</h3>
 				<p><a id="contact" href="contact.html">Contact us</a></p>
 				<div class="links_sm"> 
-					<a href="https://www.linkedin.com/company/airbusgroup"><img id="linkedin" src="media/LogoLinkedin.png"></a>
-					<a href="https://twitter.com/airbus"><img id="twitter" src="media/logox.png"></a>
-					<a href="https://www.facebook.com/airbus"><img id="facebook" src="media/logofacebook.png"></a>
-					<a href="https://www.instagram.com/airbus"><img id="instagram" src="media/logoinstragram.png"></a>
-					<a href="https://www.youtube.com/user/airbus"><img id="youtube" src="media/logoyoutube.png"></a>
-					<a href="https://www.tiktok.com/@airbus"><img id="tiktok" src="media/logotiktok.png"></a>
+					<a href="https://www.linkedin.com/company/airbusgroup" title="linkedin"><img id="Linkedin" src="media/LogoLinkedin.png"></a>
+					<a href="https://twitter.com/airbus" title="Twitter"><img id="twitter" src="media/logox.png"></a>
+					<a href="https://www.facebook.com/airbus" title="Facebook"><img id="facebook" src="media/logofacebook.png"></a>
+					<a href="https://www.instagram.com/airbus" title="Instagram"><img id="instagram" src="media/logoinstragram.png"></a>
+					<a href="https://www.youtube.com/user/airbus" title="Youtube"><img id="youtube" src="media/logoyoutube.png"></a>
+					<a href="https://www.tiktok.com/@airbus" title="TikTok"><img id="tiktok" src="media/logotiktok.png"></a>
 				</div>
 			</div>
 			<div class="columna" id="col2">
